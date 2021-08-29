@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <section>
+      
+        <form action="">
+            <fieldset>
+                <h1>Idealgewichtsrechner</h1>
+                <label for="Körpergröße" class="#">Körpergrösse</label>
+                <input type="text" id="size">
+                <label for="ALter" class="#">Alter</label>
+                <input type="text" id="age">
+                <label for="Körperbau">Körperbau</label>
+                <div>
+                    <input type="radio" name="radio" id="breite" checked onclick="getSize()">
+                    <label for="Breite">Breite</label>
+                    <input type="radio" name="radio" id="schmale" onclick="getSize()">
+                    <label for="Breite">Schmale</label>
+                </div>
+                <input type="button" value="Submit" onclick="rechnen()">
+                <p id="result"></p>
+            </fieldset>
+        </form>
+    </section>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
